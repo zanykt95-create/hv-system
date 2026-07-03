@@ -51,7 +51,7 @@
     color:var(--text);
     line-height:1.55;
   }
-  h1,h2,h3,h4,.arch-root,.mf-box,.pillar h4,details.card summary,.eyebrow,nav.quicknav a,.phase-badge,.roadmap-chip{
+  h1,h2,h3,h4,.arch-root,.mf-box,.pillar h4,details.card summary,.eyebrow,nav.quicknav a{
     font-family:'SVN-Gotham',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
   }
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px 80px;}
@@ -183,33 +183,7 @@
   .mini-flow .mf-arrow{color:var(--text-muted);font-size:16px;}
 
   /* Phase badges */
-  .phase-badge{
-    display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;
-    border-radius:999px;letter-spacing:.2px;margin-left:8px;vertical-align:middle;
-    white-space:nowrap;
-  }
-  .phase-badge.p1{background:#E4F3E8;color:#1E7A42;border:1px solid #BFE3CB;}
-  .phase-badge.p2{background:#FBF1DD;color:#96690F;border:1px solid #F0DDA9;}
-  .pillar.upcoming{border-style:dashed;background:repeating-linear-gradient(135deg,var(--kh-bg),var(--kh-bg) 10px,#fdf6ea 10px,#fdf6ea 20px);}
 
-  /* Roadmap banner in hero */
-  .roadmap-banner{
-    display:flex;gap:10px 20px;flex-wrap:wrap;align-items:center;
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.18);
-    border-radius:10px;
-    padding:13px 18px;
-    margin-top:22px;
-    font-size:13px;
-    color:rgba(255,255,255,0.95);
-  }
-  .roadmap-banner b{color:#fff;}
-  .roadmap-chip{
-    background:rgba(255,255,255,0.14);padding:4px 11px;border-radius:999px;
-    font-size:12px;font-weight:600;
-  }
-  .roadmap-chip.now{background:#2E8B57;color:#fff;}
-  .roadmap-chip.later{background:rgba(255,255,255,0.14);color:#fff;border:1px dashed rgba(255,255,255,0.5);}
 
   /* Module grid + details cards */
   .module-grid{
@@ -347,11 +321,6 @@
       <span>Cập nhật: <b>03/07/2026</b></span>
       <span>Người tổng hợp: <b>Z — Communication Specialist, HV Team</b></span>
     </div>
-    <div class="roadmap-banner">
-      <span>🗺️ <b>Lộ trình triển khai:</b></span>
-      <span class="roadmap-chip now">Giai đoạn 1 — ATS + Information Employee (ưu tiên hiện tại)</span>
-      <span class="roadmap-chip later">Giai đoạn 2 — Knowledge Hub (chuẩn bị từng bước, triển khai sau)</span>
-    </div>
     <nav class="quicknav">
       <a href="#overview">Tổng quan kiến trúc</a>
       <a href="#ats">ATS — Tuyển dụng</a>
@@ -380,7 +349,7 @@
       <div class="arch-connector"></div>
       <div class="arch-pillars">
         <div class="pillar ats">
-          <h4>🎯 ATS<span class="phase-badge p1">Giai đoạn 1</span></h4>
+          <h4>🎯 ATS</h4>
           <span class="tag">Hệ thống quản lý tuyển dụng</span>
           <div class="chip-list">
             <span class="chip">Nhu cầu tuyển dụng</span>
@@ -394,7 +363,7 @@
           </div>
         </div>
         <div class="pillar hr">
-          <h4>👤 Information Employee<span class="phase-badge p1">Giai đoạn 1</span></h4>
+          <h4>👤 Information Employee</h4>
           <span class="tag">HR App — Thông tin nhân viên</span>
           <div class="chip-list">
             <span class="chip">Onboarding</span>
@@ -410,14 +379,13 @@
             <span class="chip">Data BigQuery (Thor Bot)</span>
           </div>
         </div>
-        <div class="pillar kh upcoming">
-          <h4>🧠 Knowledge Hub<span class="phase-badge p2">Giai đoạn 2</span></h4>
-          <span class="tag">Chuẩn bị từng bước, triển khai sau</span>
+        <div class="pillar kh">
+          <h4>🧠 Knowledge Hub</h4>
+          <span class="tag">Nền tảng quản trị tri thức tập trung</span>
           <div class="chip-list">
-            <span class="chip">SOW của 6 team</span>
-            <span class="chip">SOP của 6 team</span>
-            <span class="chip">Kaizen cải tiến</span>
-            <span class="chip">Trợ lý AI tra cứu nghiệp vụ</span>
+            <span class="chip">Chuẩn hóa &amp; lưu trữ tài liệu</span>
+            <span class="chip">Chia sẻ tri thức toàn HV</span>
+            <span class="chip">AI Assistant tra cứu</span>
           </div>
         </div>
       </div>
@@ -426,7 +394,7 @@
 
   <!-- ATS DETAIL -->
   <section id="ats">
-    <div class="section-head"><h2>2. ATS — Hệ thống quản lý tuyển dụng<span class="phase-badge p1">Giai đoạn 1</span></h2></div>
+    <div class="section-head"><h2>2. ATS — Hệ thống quản lý tuyển dụng</h2></div>
     <p class="section-desc">11 module chính, bao phủ toàn bộ vòng đời tuyển dụng từ khi phát sinh nhu cầu đến khi ứng viên trở thành nhân viên hoặc được lưu vào Talent Pool để tái sử dụng.</p>
 
     <div class="module-grid">
@@ -567,7 +535,7 @@
 
   <!-- HR APP DETAIL -->
   <section id="hrapp">
-    <div class="section-head"><h2>3. HR App — Information Employee (Thông tin nhân viên)<span class="phase-badge p1">Giai đoạn 1</span></h2></div>
+    <div class="section-head"><h2>3. HR App — Information Employee (Thông tin nhân viên)</h2></div>
     <p class="section-desc">Chia làm 2 nhóm lớn: <b>Inboarding</b> (toàn bộ vòng đời khi nhân viên đang làm việc) và <b>Offboarding</b> (khi nhân viên rời công ty).</p>
 
     <h3 class="sub"><span class="dot" style="background:var(--hr)"></span>Inboarding</h3>
@@ -741,8 +709,8 @@
 
   <!-- KNOWLEDGE HUB -->
   <section id="kh">
-    <div class="section-head"><h2>4. AI Agent &amp; Knowledge Hub<span class="phase-badge p2">Giai đoạn 2 — chuẩn bị sau</span></h2></div>
-    <p class="section-desc">Lớp tri thức trung tâm — chưa triển khai ngay trong giai đoạn 1, sẽ chuẩn bị từng bước sau khi ATS &amp; Information Employee ổn định. Khi triển khai, Knowledge Hub sẽ chuẩn hóa tài liệu nội bộ từ cả 6 team (TA, HR, C&amp;B, Admin, L&amp;D, IC/Branding) và cung cấp trợ lý AI Agent cho toàn bộ HV Team.</p>
+    <div class="section-head"><h2>4. AI Agent &amp; Knowledge Hub</h2></div>
+    <p class="section-desc">Nền tảng quản trị tri thức tập trung của HV Team — chuẩn hóa, lưu trữ và chia sẻ tài liệu nghiệp vụ. AI Assistant hỗ trợ tra cứu hướng dẫn nghiệp vụ bằng ngôn ngữ tự nhiên, nhanh chóng và thuận tiện.</p>
     <div class="kh-flow">
       <div class="flow-box">SOW<small>của 6 team</small></div>
       <div class="flow-arrow">＋</div>
@@ -754,7 +722,7 @@
       <div class="flow-arrow">⇄</div>
       <div class="flow-box">HV System</div>
       <div class="kh-side">
-        <b>Truy vấn thông tin nhân sự</b> — khi hoàn thiện, AI Agent sẽ kết nối hai chiều với dữ liệu nhân sự trong HV System (phân quyền truy cập, bảo mật), cho phép trả lời câu hỏi tra cứu bằng ngôn ngữ tự nhiên dựa trên cả tài liệu quy trình lẫn dữ liệu thực tế từ ATS &amp; Information Employee.
+        <b>Truy vấn thông tin nhân sự</b> — AI Agent kết nối hai chiều với dữ liệu nhân sự trong HV System (phân quyền truy cập, bảo mật), trả lời câu hỏi tra cứu bằng ngôn ngữ tự nhiên dựa trên cả tài liệu quy trình lẫn dữ liệu thực tế.
       </div>
     </div>
   </section>
